@@ -58,7 +58,7 @@ img {
 }
 
 #top-panel td > a {
-  background: url("img/jenkins_logo.png") 0 no-repeat;
+  background: url("https://raw.github.com/djonsson/jenkins-atlassian-theme/master/src/jenkins_logo.png") 0 no-repeat;
   display: block;
   width: 330px;
   height: 30px;
