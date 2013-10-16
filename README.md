@@ -14,13 +14,15 @@ In just *seven* easy steps this camouflage will make Jenkins look just like a pr
 
 1. Install the [Simple Theme Plugin][simple]
 
-1. Upload `script.js`, `style.css` and `jenkins_logo.png` to your local network, or let Jenkins host them in userContent
+1. Upload `script.js`, `style.css` and `jenkins_logo.png` to your web server, or let Jenkins host them in userContent, or hotlink them from Github.
 
 1. Click `Manage Jenkins`
 
 1. Click `Configure System` and scroll down to `Theme`
 
 1. Specify the CSS and Javascript URL for the theme
+    - URL of theme CSS: `https://raw.github.com/djonsson/jenkins-atlassian-theme/master/src/style.css`
+	- URL of theme JS: `https://raw.github.com/djonsson/jenkins-atlassian-theme/master/src/script.js`
 
 1. Click `Save`!
 
