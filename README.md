@@ -1,4 +1,4 @@
-# Jenkins Atlassian Theme v0.1
+# Jenkins Atlassian Theme
 
 <img src="http://danieljonsson.net/jenkins_beard.png" alt="" />
 
