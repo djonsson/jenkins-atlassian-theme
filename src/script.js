@@ -2,40 +2,51 @@ jQuery(function($){
 
     $('#footer').closest('table').css('border-spacing', 0);
 
-    if(~document.cookie.indexOf('gravatar=')) {
-        var gravatarUrl = readCookie('gravatar');
-        renderGravatar(gravatarUrl);
-        return;
-    }
+    var userName = $('#login-field .model-link.inside').attr('href');
+    var gravatarCookie = checkGravatarCookie();
 
-    var host            = location.protocol + '//' + location.host;
-    var gravatarPlugin  = '/pluginManager/plugin/gravatar/thirdPartyLicenses';
-    var requestUrl      = host + gravatarPlugin;
-    
-    $.ajax({
-        type: "GET",
-        url: requestUrl,
-        success: function() {
-            var gravatar = 'https://www.gravatar.com/avatar/';
-            var userName = $('#login-field .model-link.inside').attr('href');
-            var userApiUrl = '/api/json?pretty=true';
-            var request = userName + userApiUrl;
+    if(userName) {
+        if(!gravatarCookie) {
+            var host            = location.protocol + '//' + location.host;
+            var gravatarPlugin  = '/pluginManager/plugin/gravatar/thirdPartyLicenses';
+            var requestUrl      = host + gravatarPlugin;
+            
+            $.ajax({
+                type: "GET",
+                url: requestUrl,
+                success: function() {
+                    var gravatar = 'https://www.gravatar.com/avatar/';
+                    var userApiUrl = '/api/json?pretty=true';
+                    var request = userName + userApiUrl;
 
-            $.getJSON(request, function returnUserEmail(request) {
-                var propertyArray = request.property;
+                    $.getJSON(request, function returnUserEmail(request) {
+                        var propertyArray = request.property;
 
-                for (var i = 0; i < propertyArray.length; i++) {
-                    var obj = propertyArray[i];
-                    if (obj.address) {
-                        var imgUrl = gravatar + MD5(obj.address);
-                        writeCookie('gravatar', imgUrl, 3);
-                        renderGravatar(imgUrl);
-                        return;
-                    }
+                        for (var i = 0; i < propertyArray.length; i++) {
+                            var obj = propertyArray[i];
+                            if (obj.address) {
+                                var imgUrl = gravatar + MD5(obj.address);
+                                writeCookie('gravatar', imgUrl, 3);
+                                renderGravatar(imgUrl);
+                                return;
+                            }
+                        }
+                    });
                 }
             });
         }
-    });
+    }
+
+function checkGravatarCookie() {
+    if(~document.cookie.indexOf('gravatar=')) {
+        var gravatarUrl = readCookie('gravatar');
+        renderGravatar(gravatarUrl);
+        return true;
+    } else {
+        return false;
+    }
+}
+    
     function writeCookie(name,value,days) {
         var date, expires;
         if (days) {
