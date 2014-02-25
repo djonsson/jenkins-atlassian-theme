@@ -17,7 +17,7 @@ jQuery(function($){
         url: requestUrl,
         success: function() {
             var gravatar = 'https://www.gravatar.com/avatar/';
-            var userName = $('.model-link.inside').attr('href');
+            var userName = $('#login-field .model-link.inside').attr('href');
             var userApiUrl = '/api/json?pretty=true';
             var request = userName + userApiUrl;
 
