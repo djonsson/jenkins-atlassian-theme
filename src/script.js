@@ -15,34 +15,27 @@ jQuery(function($){
     $.ajax({
         type: "GET",
         url: requestUrl,
-        error: function () {
-            console.log("Could not find Gravatar Plugin");
-            return;
+        success: function() {
+            var gravatar = 'https://www.gravatar.com/avatar/';
+            var userName = $('.model-link.inside').attr('href');
+            var userApiUrl = '/api/json?pretty=true';
+            var request = userName + userApiUrl;
+
+            $.getJSON(request, function returnUserEmail(request) {
+                var propertyArray = request.property;
+
+                for (var i = 0; i < propertyArray.length; i++) {
+                    var obj = propertyArray[i];
+                    if (obj.address) {
+                        var imgUrl = gravatar + MD5(obj.address);
+                        writeCookie('gravatar', imgUrl, 3);
+                        renderGravatar(imgUrl);
+                        return;
+                    }
+                }
+            });
         }
     });
-
-    var gravatar    = 'https://www.gravatar.com/avatar/';
-    var userName    = $('.model-link.inside').attr('href');
-    var userApiUrl  = '/api/json?pretty=true';
-    var request     = userName + userApiUrl;
-
-    $.getJSON(request, function returnUserEmail(request) {
-        var propertyArray = request.property;
-
-        for(var i = 0; i < propertyArray.length; i++) {
-            var obj = propertyArray[i];
-            if (null != obj.address) {
-                var email = obj.address;
-                console.log(email);
-            }   
-        }
-
-        var imgUrl  = gravatar + MD5(email);
-        writeCookie('gravatar', imgUrl, 3);
-        renderGravatar(imgUrl);
-    });
-
-
     function writeCookie(name,value,days) {
         var date, expires;
         if (days) {
