@@ -8,23 +8,35 @@ In just *seven* easy steps this camouflage will make Jenkins look just like a pr
 
 *The project is not affiliated or endorsed by Atlassian*
 
+## Live Demo 
+A live demo with the latest changes is available at [test.do][livedemo]. It also doubles as a staging area for testing in develop. 
+
 ## Installation 
 
 1. Install the [JQuery Plugin][jquery]
 
 1. Install the [Simple Theme Plugin][simple]
 
-1. Upload `script.js`, `style.css` and `jenkins_logo.png` to your web server or use the hosted version (see step 6).
+1. Upload `script.js`, `style.css` and `jenkins_logo.png` to your web server
 
 1. Click `Manage Jenkins`
 
 1. Click `Configure System` and scroll down to `Theme`
 
-1. Specify the CSS and Javascript URL for the theme
-    - Hosted CSS: `http://master.source.test.do/src/style.css`
-    - Hosted Javascript: `http://master.source.test.do/src/script.js`
+1. Specify the URL for `script.js` and `style.css`. 
 
-1. Click `Save`!
+1. Click `Save`
+
+## Hosted installation
+Skip step 3 and use these URLs in step 6:
+
+**Master (Stable)**
+- Hosted CSS: `http://master.source.test.do/src/style.css`
+- Hosted Javascript: `http://master.source.test.do/src/script.js`
+
+**Develop (Latest)**
+- Hosted CSS: `http://develop.source.test.do/src/style.css`
+- Hosted Javascript: `http://develop.source.test.do/src/script.js`
 
 
 ## Compatibility
@@ -41,15 +53,9 @@ If you are experiencing issues please let me know! Also, feel free to contribute
 - [Doony][doony] for inspiration and javascript
 - [ProgressCircle.js][progresscircle] for the spinning progress circles that replace the orbs 
 
-## Examples
-<img src="http://danieljonsson.net/atlassian_theme/full_view.png" />
-***
-<img src="http://danieljonsson.net/atlassian_theme/console_output.png" />
-***
-<img src="http://danieljonsson.net/atlassian_theme/build_executors.png" />
-
 [jquery]: https://wiki.jenkins-ci.org/display/JENKINS/jQuery+Plugin
 [simple]: https://wiki.jenkins-ci.org/display/JENKINS/Simple+Theme+Plugin
 [doony]: https://github.com/kevinburke/doony
 [progresscircle]: https://github.com/qiao/ProgressCircle.js
 [atlassian]: http://atlassian.com
+[livedemo]: http://test.do
