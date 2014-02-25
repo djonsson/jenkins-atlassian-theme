@@ -1,4 +1,4 @@
-# Jenkins Atlassian Theme v0.1
+# Jenkins Atlassian Theme
 
 <img src="http://danieljonsson.net/jenkins_beard.png" alt="" />
 
@@ -21,8 +21,8 @@ In just *seven* easy steps this camouflage will make Jenkins look just like a pr
 1. Click `Configure System` and scroll down to `Theme`
 
 1. Specify the CSS and Javascript URL for the theme
-    - Hosted CSS: `http://git.test.do/src/style.css`
-    - Hosted Javascript: `http://git.test.do/src/script.js`
+    - Hosted CSS: `http://master.source.test.do/src/style.css`
+    - Hosted Javascript: `http://master.source.test.do/src/script.js`
 
 1. Click `Save`!
 
