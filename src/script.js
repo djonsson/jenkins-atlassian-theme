@@ -1,3 +1,28 @@
+jQuery(function(){
+ 
+    function stickyFooter() {
+      var bodyHeight = jQuery("body.yui-skin-sam").height();
+      var vwptHeight = jQuery(window).height();
+      var footHeight = 45;
+      var headerHeight = jQuery("#header").height();
+      jQuery("#main-table").css("min-height",vwptHeight-footHeight-headerHeight);
+    }
+     
+    jQuery(document).ready(function() {
+      stickyFooter();
+    });
+     
+    jQuery(window).resize(function() {
+      stickyFooter();
+    });
+     
+    jQuery(document).scroll(function() {
+      stickyFooter();
+    });
+
+});
+
+
 /*
  * ProgressCircle.js
  * http://qiao.github.io/ProgressCircle.js/
