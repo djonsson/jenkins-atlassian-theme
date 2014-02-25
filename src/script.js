@@ -1,6 +1,8 @@
-jQuery(function(){
+jQuery(function($){
 
-     if(~document.cookie.indexOf('gravatar=')) {
+    $('#footer').closest('table').css('border-spacing', 0);
+
+    if(~document.cookie.indexOf('gravatar=')) {
         var gravatarUrl = readCookie('gravatar');
         renderGravatar(gravatarUrl);
         return;
@@ -10,20 +12,21 @@ jQuery(function(){
     var gravatarPlugin  = '/pluginManager/plugin/gravatar/thirdPartyLicenses';
     var requestUrl      = host + gravatarPlugin;
     
-    jQuery.ajax ({  type: "GET",
-                    url: requestUrl,
-                    error: function () {
-                        console.log("Could not find Gravatar Plugin");
-                        return; 
-                    }
-                });
+    $.ajax({
+        type: "GET",
+        url: requestUrl,
+        error: function () {
+            console.log("Could not find Gravatar Plugin");
+            return;
+        }
+    });
 
     var gravatar    = 'https://www.gravatar.com/avatar/';
-    var userName    = jQuery('.model-link.inside').attr('href');
+    var userName    = $('.model-link.inside').attr('href');
     var userApiUrl  = '/api/json?pretty=true';
     var request     = userName + userApiUrl;
 
-    jQuery.getJSON(request, function returnUserEmail(request) {
+    $.getJSON(request, function returnUserEmail(request) {
         var propertyArray = request.property;
 
         for(var i = 0; i < propertyArray.length; i++) {
@@ -68,7 +71,7 @@ jQuery(function(){
     }
 
     function renderGravatar(imgUrl) {
-        var img = jQuery('<img>').attr({'src': imgUrl}).css({
+        var img = $('<img>').attr({'src': imgUrl}).css({
             'height': '32px',
             'width': '32px',
             '-webkit-border-radius': '3px',
@@ -76,7 +79,7 @@ jQuery(function(){
             '-border-radius': '3px',
             'margin-top': '4px'
         });
-        jQuery("#login-field").after(img.fadeIn(300));
+        $("#login-field").after(img.fadeIn(300));
     }
 
     var MD5 = function (string) {
@@ -299,26 +302,24 @@ jQuery(function(){
 }); 
 
 
-jQuery(function(){
+jQuery(function($){
  
     function stickyFooter() {
-      var bodyHeight = jQuery("body.yui-skin-sam").height();
-      var vwptHeight = jQuery(window).height();
-      var footHeight = 45;
-      var headerHeight = jQuery("#header").height();
-      jQuery("#main-table").css("min-height",vwptHeight-footHeight-headerHeight);
+        var bodyHeight = $("body.yui-skin-sam").height();
+        var vwptHeight = $(window).height();
+        var footHeight = 45;
+        var headerHeight = $("#header").height();
+        $("#main-table").css("min-height",vwptHeight-footHeight-headerHeight);
     }
      
-    jQuery(document).ready(function() {
-      stickyFooter();
+    stickyFooter();
+     
+    $(window).resize(function() {
+        stickyFooter();
     });
      
-    jQuery(window).resize(function() {
-      stickyFooter();
-    });
-     
-    jQuery(document).scroll(function() {
-      stickyFooter();
+    $(document).scroll(function() {
+        stickyFooter();
     });
 
 });
