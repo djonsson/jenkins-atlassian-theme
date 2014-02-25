@@ -3,10 +3,8 @@ jQuery(function($){
     $('#footer').closest('table').css('border-spacing', 0);
 
     var userName = $('#login-field .model-link.inside').attr('href');
-    var gravatarCookie = checkGravatarCookie();
-
     if(userName) {
-        if(!gravatarCookie) {
+        if(!checkGravatarCookie()) {
             var host            = location.protocol + '//' + location.host;
             var gravatarPlugin  = '/pluginManager/plugin/gravatar/thirdPartyLicenses';
             var requestUrl      = host + gravatarPlugin;
