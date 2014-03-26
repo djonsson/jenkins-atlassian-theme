@@ -100,6 +100,7 @@ img {
 }
 
 #search-box {
+  width: 175px !important;
   -moz-appearance: textfield;
   -webkit-appearance: textfield;
   border: none;

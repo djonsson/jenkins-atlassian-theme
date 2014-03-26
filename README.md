@@ -9,13 +9,19 @@ In just *seven* easy steps this camouflage will make Jenkins look just like a pr
 *The project is not affiliated or endorsed by Atlassian*
 
 ## Live Demo 
-A live demo with the latest changes is available at [test.do][livedemo]. It also doubles as a staging area for testing in develop. 
+A live demo with the latest changes is available at [test.do][livedemo]. 
+
+Login with the following credentials:
+- **Username:** DrJenkins
+- **Password:** SunflowerRainbowPrince
 
 ## Installation 
 
 1. Install the [JQuery Plugin][jquery]
 
 1. Install the [Simple Theme Plugin][simple]
+
+1. Install the [Gravatar Plugin][gravatar]
 
 1. Upload `script.js`, `style.css` and `jenkins_logo.png` to your web server
 
@@ -34,7 +40,7 @@ Skip step 3 and use these URLs in step 6:
 - Hosted CSS: `http://master.source.test.do/src/style.css`
 - Hosted Javascript: `http://master.source.test.do/src/script.js`
 
-**Develop (Latest)**
+**Develop (Test environment)**
 - Hosted CSS: `http://develop.source.test.do/src/style.css`
 - Hosted Javascript: `http://develop.source.test.do/src/script.js`
 
@@ -43,6 +49,7 @@ Skip step 3 and use these URLs in step 6:
 - JQuery plugin 1.7.2-1
 - Simple Theme plugin 0.3
 - Jenkins 1.551
+- Gravatar plugin 1.1
 
 If you are experiencing issues please let me know! Also, feel free to contribute!
 
@@ -55,6 +62,8 @@ If you are experiencing issues please let me know! Also, feel free to contribute
 
 [jquery]: https://wiki.jenkins-ci.org/display/JENKINS/jQuery+Plugin
 [simple]: https://wiki.jenkins-ci.org/display/JENKINS/Simple+Theme+Plugin
+[gravatar]: https://wiki.jenkins-ci.org/display/JENKINS/Gravatar+plugin
+
 [doony]: https://github.com/kevinburke/doony
 [progresscircle]: https://github.com/qiao/ProgressCircle.js
 [atlassian]: http://atlassian.com
