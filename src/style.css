@@ -367,6 +367,10 @@ body>pre a,body>pre a:visited,#main-panel pre a,#main-panel pre a:visited {
     color:#9a8eb8;
 }
 
+tr.permission-row:nth-child(even) {
+  background-color: #e0f0ff;
+}
+
 /* Dooney */
 
 .doony-callout-info {
