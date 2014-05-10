@@ -1,7 +1,7 @@
 jQuery(function($){
+		var welcomeMessage 	= "Welcome to Jenkins - CI Server";
+		var srcDirectory 	= 'http://develop.source.test.do/src/';
 
-	function loadLogin (srcDirectory) {
-		var welcomeMessage 	= "Welcome to Jenkins - CI Server"
 
 		var mainPanel 		= $( '#main-panel' );
 		var sidePanel 		= $( '#side-panel' );
@@ -38,7 +38,7 @@ jQuery(function($){
 		function createDiv ( name ) {
 			return $('<div />', {
 	        "class": name,
-	    	})	
+	    	});	
 		}
 	}
 	
