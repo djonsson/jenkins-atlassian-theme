@@ -2,8 +2,8 @@ jQuery(function($){
 
     $('#footer').closest('table').css('border-spacing', 0);
 
-    var userPath = $('#login-field .model-link.inside').attr('href');
-    if(userPath) {
+    var urlToUserProfile = $('#login-field .model-link.inside').attr('href');
+    if(urlToUserProfile) {
         if(!checkGravatarCookie()) {
             var host            = location.protocol + '//' + location.host;
             var gravatarPlugin  = '/pluginManager/plugin/gravatar/thirdPartyLicenses';
@@ -15,7 +15,7 @@ jQuery(function($){
                 success: function() {
                     var gravatar = 'https://www.gravatar.com/avatar/';
                     var userApiUrl = '/api/json?pretty=true';
-                    var request = userPath + userApiUrl;
+                    var request = urlToUserProfile + userApiUrl;
 
                     $.getJSON(request, function returnUserEmail(request) {
                         var propertyArray = request.property;
