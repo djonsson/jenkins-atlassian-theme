@@ -31,20 +31,19 @@ jQuery(function($){
 			buttonSpan.wrap 	( createDiv( 'button-wrapper' ) );
 
 			$( '.login-wrapper' ).prepend(' <h2> ' + welcomeMessage + ' </h2> ');
-			$( '.login-container div:last' ).removeAttr( 'style' ); 
+			$( '.login-container div:last' ).removeAttr( 'style' );
 		}
 
 	function createDiv ( name ) {
 		return $('<div />', {
-        "class": name,
-    	});	
+		"class": name,
+		});
 	}
 
 	function appendStyleSheet( stylesheet ) {
 		$( '<link>' ).attr( 'rel'  , 'stylesheet')
-  			.attr( 'type' , 'text/css' )
-  			.attr( 'href' , stylesheet )
-  			.appendTo( 'head' );
+			.attr( 'type' , 'text/css' )
+			.attr( 'href' , stylesheet )
+			.appendTo( 'head' );
 	}
-
 });
