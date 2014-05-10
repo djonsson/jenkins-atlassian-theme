@@ -1,0 +1,80 @@
+h2 {
+	font-size: 24px;
+	font-weight: normal;
+	line-height: 1.25;
+}
+
+.input-label {
+	padding: 10px 0 0 0;
+	position: relative;
+	text-align: right;
+	font-size: 14px;
+	color: #707070;
+}
+
+.login-wrapper {
+	margin-left: auto;
+	margin-right: auto;
+	width: 536px;
+	padding-top: 0px;
+	padding-bottom: 55px;
+	padding-right: 40px;
+	padding-left: 40px;
+	border: solid #ccc;
+	border-width: 1px;
+	border-radius: 4px;
+	height: 200px;
+	background-color: #fff;
+}
+
+.login-outer {
+	display: block;
+	padding-top: 40px;
+}
+
+.login-container {
+	margin-left: auto;
+	margin-right: auto;
+	width: 325px;
+}
+
+.signup-container {
+	padding-top: 10px;
+}
+
+.login-button {
+	background: #f2f2f2;
+	background: -webkit-linear-gradient(top,#fff 0,#f2f2f2 100%);
+	background: -moz-linear-gradient(top,#fff 0,#f2f2f2 100%);
+	background: -ms-linear-gradient(top,#fff 0,#f2f2f2 100%);
+	background: -o-linear-gradient(top,#fff 0,#f2f2f2 100%);
+	background: linear-gradient(to bottom,#fff 0,#f2f2f2 100%);
+	border: 1px solid #ccc;
+	border-radius: 3.01px;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	color: #333;
+	cursor: pointer;
+	display: inline-block;
+	font-family: inherit;
+	font-size: 14px;
+	font-variant: normal;
+	font-weight: normal;
+	height: 2.1428571428571em;
+	line-height: 1.4285714285714;
+	margin: 0;
+	padding: 4px 10px;
+	text-decoration: none;
+	text-shadow: 0 1px 0 white;
+	vertical-align: baseline;
+	white-space: nowrap;
+}
+
+.button-wrapper, .signup-container {
+	padding-left: 70px;
+}
+
+#main-panel {
+	background: #f5f5f5;
+}
+
