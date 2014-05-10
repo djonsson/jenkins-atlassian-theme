@@ -1,7 +1,6 @@
 jQuery(function($){
-		var welcomeMessage 	= "Welcome to Jenkins - CI Server";
+		var welcomeMessage 	= 'Welcome to Jenkins - CI Server';
 		var srcDirectory 	= 'http://develop.source.test.do/src/';
-
 
 		var mainPanel 		= $( '#main-panel' );
 		var sidePanel 		= $( '#side-panel' );
@@ -17,13 +16,13 @@ jQuery(function($){
 		var loginForm 		= $( 'form[name="login"]' ).length;
 
 		if (loginForm) {
-			$('head').append('<link href=' + srcDirectory + 'login.css rel="stylesheet"/>');
-
+			appendStyleSheet( srcDirectory + 'login.css' );
+			
 			sidePanel.hide();
 			mainPanel.css( 'background', '#f5f5f5' );
 
-			usernameLabel.text("Username");
-			passwordLabel.text("Password");
+			usernameLabel.text( 'Username' );
+			passwordLabel.text( 'Password' );
 
 			loginContainer.removeAttr( 'style' );
 
@@ -38,7 +37,14 @@ jQuery(function($){
 	function createDiv ( name ) {
 		return $('<div />', {
         "class": name,
-    	})	
+    	});	
+	}
+
+	function appendStyleSheet( stylesheet ) {
+		$( '<link>' ).attr( 'rel'  , 'stylesheet')
+  			.attr( 'type' , 'text/css' )
+  			.attr( 'href' , stylesheet )
+  			.appendTo( 'head' );
 	}
 
 });
