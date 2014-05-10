@@ -27,10 +27,9 @@ jQuery(function($){
 			loginContainer.removeAttr( 'style' );
 
 			loginContainer.wrap ( createDiv( 'login-outer'    ) );
-			loginContainer.wrap ( createDiv( 'login-wrapper'  ) );
+			loginContainer.wrap ( createDiv( 'login-wrapper'  ).prepend(' <h2> ' + welcomeMessage + ' </h2> '));
 			buttonSpan.wrap 	( createDiv( 'button-wrapper' ) );
 
-			$( '.login-wrapper' ).prepend(' <h2> ' + welcomeMessage + ' </h2> ');
 			$( '.login-container div:last' ).removeAttr( 'style' );
 		}
 
@@ -41,7 +40,7 @@ jQuery(function($){
 	}
 
 	function appendStyleSheet( stylesheet ) {
-		$( '<link>' ).attr( 'rel'  , 'stylesheet')
+		return $( '<link>' ).attr( 'rel'  , 'stylesheet')
 			.attr( 'type' , 'text/css' )
 			.attr( 'href' , stylesheet )
 			.appendTo( 'head' );
