@@ -17,7 +17,7 @@ jQuery(function($){
 		var loginForm 		= $( 'form[name="login"]' ).length;
 
 		if (loginForm) {
-			$('head').append('<link href=' + srcDirectory + '"login.css" rel="stylesheet" id="banSheet" />');
+			$('head').append('<link href=' + srcDirectory + 'login.css rel="stylesheet"/>');
 
 			sidePanel.hide();
 			mainPanel.css( 'background', '#f5f5f5' );
@@ -35,12 +35,10 @@ jQuery(function($){
 			$( '.login-container div:last' ).removeAttr( 'style' ); 
 		}
 
-		function createDiv ( name ) {
-			return $('<div />', {
-	        "class": name,
-	    	});	
-		}
+	function createDiv ( name ) {
+		return $('<div />', {
+        "class": name,
+    	})	
 	}
-	
-});
 
+});
