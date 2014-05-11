@@ -1,14 +1,14 @@
 jQuery(function($){
 
-	var dependencies = [ 	'login.js',
+	var dependencies = [	'login.js',
 							'progressCircle.js',
 							'gravatar.js'];
 
 	returnSrcDir( dependencies, function ( srcDir ) {
 		injectDepenencies ( srcDir, dependencies, function () {
-			console.log("A cookie should be written here");
-			console.log(srcDir);
-			console.log(dependencies);
+			//console.log("A cookie should be written here");
+			//console.log(srcDir);
+			//console.log(dependencies);
 		});
 	});
 
