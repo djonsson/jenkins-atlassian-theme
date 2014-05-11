@@ -1,6 +1,28 @@
 jQuery(function($){
-	var srcDirectory = 'http://develop.source.test.do/src/';
-	$.getScript(srcDirectory + "login.js");
-	$.getScript(srcDirectory + "script.js");
-	$.getScript(srcDirectory + "gravatar.js");
+
+	returnSrcDir( function ( srcDir ) {
+		var dependencies = [ 	'login.js',
+								'script.js',
+								'gravatar.js'];
+
+		function injectDepenencies( srcDir, dependencies ) {
+			dependencies.forEach( function ( entry ) {
+				$.getScript( srcDir + entry );
+			});
+		}
+		injectDepenencies ( srcDir, dependencies );
+	});
+
+	function returnSrcDir(callback) {
+		var loadScript = 'loadScript.js';
+		$( 'script' ).each( function () {
+			var src = $( this ).attr( 'src' );
+			if( typeof src !== 'undefined' ) {
+				if ( src.match( loadScript + '$' ) ) {
+					src = src.replace( loadScript , '' );
+					callback ( src );
+				}
+			}
+		});
+	}	
 });
