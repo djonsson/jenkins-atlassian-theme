@@ -1,19 +1,18 @@
 jQuery(function($){
 
-	returnSrcDir( function ( srcDir ) {
-		var dependencies = [ 	'login.js',
-								'progressCircle.js',
-								'gravatar.js'];
+	var dependencies = [ 	'login.js',
+							'progressCircle.js',
+							'gravatar.js'];
 
-		function injectDepenencies( srcDir, dependencies ) {
-			dependencies.forEach( function ( entry ) {
-				$.getScript( srcDir + entry );
-			});
-		}
-		injectDepenencies ( srcDir, dependencies );
+	returnSrcDir( dependencies, function ( srcDir ) {
+		injectDepenencies ( srcDir, dependencies, function () {
+			console.log("A cookie should be written here");
+			console.log(srcDir);
+			console.log(dependencies);
+		});
 	});
 
-	function returnSrcDir(callback) {
+	function returnSrcDir( depencencies, callback ) {
 		var loadScript = 'loadScript.js';
 		$( 'script' ).each( function () {
 			var src = $( this ).attr( 'src' );
@@ -24,5 +23,12 @@ jQuery(function($){
 				}
 			}
 		});
+	}
+
+	function injectDepenencies( srcDir, dependencies, callback ) {
+		dependencies.forEach( function ( entry ) {
+			$.getScript( srcDir + entry );
+		});
+		callback();
 	}	
 });
