@@ -2,7 +2,7 @@ jQuery(function($){
 
 	returnSrcDir( function ( srcDir ) {
 		var dependencies = [ 	'login.js',
-								'script.js',
+								'progressCircles.js',
 								'gravatar.js'];
 
 		function injectDepenencies( srcDir, dependencies ) {
