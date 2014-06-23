@@ -58,11 +58,11 @@ img {
 }
 
 #top-panel td > a {
-  background: url("https://raw.github.com/djonsson/jenkins-atlassian-theme/master/src/jenkins_logo.png") 0 no-repeat;
+  background: url("jenkins_logo.png") 0 no-repeat;
   display: block;
   width: 330px;
-  height: 30px;
-  margin: 8px 0 5px 10px; 
+  height: 40px;
+  margin: 0px 0 0px 10px; 
 }
 
 #top-panel td > a img {
@@ -365,6 +365,10 @@ body>pre,#main-panel>pre {
 
 body>pre a,body>pre a:visited,#main-panel pre a,#main-panel pre a:visited {
     color:#9a8eb8;
+}
+
+tr.permission-row:nth-child(even) {
+  background-color: #e0f0ff;
 }
 
 /* Dooney */
