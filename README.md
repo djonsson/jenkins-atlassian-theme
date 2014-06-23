@@ -23,7 +23,7 @@ Login with the following credentials:
 
 1. Install the [Gravatar Plugin][gravatar]
 
-1. Upload `script.js`, `style.css` and `jenkins_logo.png` to your web server
+1. Upload `loadScript.js`, `style.css` and `jenkins_logo.png` to your web server
 
 1. Click `Manage Jenkins`
 
