@@ -23,13 +23,13 @@ Login with the following credentials:
 
 1. Install the [Gravatar Plugin][gravatar]
 
-1. Upload `script.js`, `style.css` and `jenkins_logo.png` to your web server
+1. Upload `loadScript.js`, `style.css` and `jenkins_logo.png` to your web server
 
 1. Click `Manage Jenkins`
 
 1. Click `Configure System` and scroll down to `Theme`
 
-1. Specify the URL for `script.js` and `style.css`. 
+1. Specify the URL for `loadScript.js` and `style.css`. 
 
 1. Click `Save`
 
@@ -38,11 +38,11 @@ Skip step 3 and use these URLs in step 6:
 
 **Master (Stable)**
 - Hosted CSS: `http://master.source.test.do/src/style.css`
-- Hosted Javascript: `http://master.source.test.do/src/script.js`
+- Hosted Javascript: `http://master.source.test.do/src/loadScript.js`
 
 **Develop (Test environment)**
 - Hosted CSS: `http://develop.source.test.do/src/style.css`
-- Hosted Javascript: `http://develop.source.test.do/src/script.js`
+- Hosted Javascript: `http://develop.source.test.do/src/loadScript.js`
 
 
 ## Compatibility
