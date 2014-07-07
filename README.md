@@ -23,13 +23,13 @@ Login with the following credentials:
 
 1. Install the [Gravatar Plugin][gravatar]
 
-1. Upload `loadScript.js`, `style.css` and `jenkins_logo.png` to your web server
+1. Upload `theme.js`, `theme.css` and `jenkins_logo.png` to your web server
 
 1. Click `Manage Jenkins`
 
 1. Click `Configure System` and scroll down to `Theme`
 
-1. Specify the URL for `loadScript.js` and `style.css`. 
+1. Specify the URL for `theme.js` and `theme.css`. 
 
 1. Click `Save`
 
@@ -37,12 +37,12 @@ Login with the following credentials:
 Skip step 3 and use these URLs in step 6:
 
 **Master (Stable)**
-- Hosted CSS: `http://master.source.test.do/src/style.css`
-- Hosted Javascript: `http://master.source.test.do/src/loadScript.js`
+- Hosted CSS: `http://master.source.test.do/dist/theme.css`
+- Hosted Javascript: `http://master.source.test.do/dist/theme.js`
 
 **Develop (Test environment)**
-- Hosted CSS: `http://develop.source.test.do/src/style.css`
-- Hosted Javascript: `http://develop.source.test.do/src/loadScript.js`
+- Hosted CSS: `http://develop.source.test.do/dist/theme.css`
+- Hosted Javascript: `http://develop.source.test.do/dist/theme.js`
 
 
 ## Compatibility
@@ -74,8 +74,8 @@ grunt deploy
 
 and you can find the files at:
 
-http://YOURUSER.github.io/jenkins-atlassian-theme/theme.css
-http://YOURUSER.github.io/jenkins-atlassian-theme/theme.js
+- http://YOURUSER.github.io/jenkins-atlassian-theme/theme.css
+- http://YOURUSER.github.io/jenkins-atlassian-theme/theme.js
 
 ##Thanks to
 - [JQuery Plugin][jquery] for the jQuery plugin
