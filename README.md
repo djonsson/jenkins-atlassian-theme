@@ -53,6 +53,30 @@ Skip step 3 and use these URLs in step 6:
 
 If you are experiencing issues please let me know! Also, feel free to contribute!
 
+## Development
+
+CSS & JS files are minified and compressed with Grunt. To prepare the environment:
+
+```
+npm install
+grunt
+```
+
+This will generate the following files:
+- dist/theme.css
+- dist/theme.js
+
+You can publish the files on gh-pages with the following command:
+
+```
+grunt deploy
+```
+
+and you can find the files at:
+
+http://YOURUSER.github.io/jenkins-atlassian-theme/theme.css
+http://YOURUSER.github.io/jenkins-atlassian-theme/theme.js
+
 ##Thanks to
 - [JQuery Plugin][jquery] for the jQuery plugin
 - [Simple Theme Plugin][simple] for the Simple Theme plugin
