@@ -63,10 +63,10 @@ You can publish the files on gh-pages with the following command:
 grunt deploy
 ```
 
-and you can find the files at:
+And you can find the files at:
 
-- http://YOURUSER.github.io/jenkins-atlassian-theme/theme.css
-- http://YOURUSER.github.io/jenkins-atlassian-theme/theme.js
+- `http://YOURUSER.github.io/jenkins-atlassian-theme/theme.css`
+- `http://YOURUSER.github.io/jenkins-atlassian-theme/theme.js`
 
 ## Compatibility
 - JQuery plugin 1.7.2-1
