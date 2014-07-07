@@ -44,15 +44,6 @@ Skip step 3 and use these URLs in step 6:
 - Hosted CSS: `http://develop.source.test.do/dist/theme.css`
 - Hosted Javascript: `http://develop.source.test.do/dist/theme.js`
 
-
-## Compatibility
-- JQuery plugin 1.7.2-1
-- Simple Theme plugin 0.3
-- Jenkins 1.551
-- Gravatar plugin 1.1
-
-If you are experiencing issues please let me know! Also, feel free to contribute!
-
 ## Development
 
 CSS & JS files are minified and compressed with Grunt. To prepare the environment:
@@ -76,6 +67,14 @@ and you can find the files at:
 
 - http://YOURUSER.github.io/jenkins-atlassian-theme/theme.css
 - http://YOURUSER.github.io/jenkins-atlassian-theme/theme.js
+
+## Compatibility
+- JQuery plugin 1.7.2-1
+- Simple Theme plugin 0.3
+- Jenkins 1.551
+- Gravatar plugin 1.1
+
+If you are experiencing issues please let me know! Also, feel free to contribute!
 
 ##Thanks to
 - [JQuery Plugin][jquery] for the jQuery plugin
