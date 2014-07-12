@@ -323,7 +323,6 @@ input[name='j_username'], input[name='j_password'] {
     margin: 0;
     padding: 4px 10px;
     text-decoration: none;
-    text-shadow: 0 1px 0 #FFFFFF;
     vertical-align: baseline;
     white-space: nowrap;
     text-transform: capitalize;
