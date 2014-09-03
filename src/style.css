@@ -94,7 +94,7 @@ img.icon-help {
     display: none;
 }
 
-.top-sticker-inner {
+.top-sticker-inner, #footer-container {
     background-color: #ffffff;
 }
 
