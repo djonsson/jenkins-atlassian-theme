@@ -4,6 +4,22 @@ h2 {
 	line-height: 1.25;
 }
 
+input[name='j_username'], input[name='j_password'] {
+    -moz-box-sizing: border-box;
+    border: 1px solid #CCCCCC;
+    border-radius: 3.01px 3.01px 3.01px 3.01px;
+    box-shadow: 0 1px 3px #CCCCCC inset;
+    color: #333333;
+    font-size: inherit;
+    margin: 0;
+    max-width: 250px;
+    vertical-align: baseline;
+    width: 100%;
+    height: 2.5em;
+    line-height: 1.42857;
+    padding: 4px 5px;
+}
+
 .input-label {
 	padding: 10px 0 0 0;
 	position: relative;
@@ -23,7 +39,7 @@ h2 {
 	border: solid #ccc;
 	border-width: 1px;
 	border-radius: 4px;
-	height: 200px;
+	height: 250px;
 	background-color: #fff;
 }
 
@@ -35,7 +51,7 @@ h2 {
 .login-container {
 	margin-left: auto;
 	margin-right: auto;
-	width: 325px;
+	width: 500px;
 }
 
 .signup-container {
@@ -43,31 +59,31 @@ h2 {
 }
 
 .login-button {
-	background: #f2f2f2;
-	background: -webkit-linear-gradient(top,#fff 0,#f2f2f2 100%);
-	background: -moz-linear-gradient(top,#fff 0,#f2f2f2 100%);
-	background: -ms-linear-gradient(top,#fff 0,#f2f2f2 100%);
-	background: -o-linear-gradient(top,#fff 0,#f2f2f2 100%);
-	background: linear-gradient(to bottom,#fff 0,#f2f2f2 100%);
-	border: 1px solid #ccc;
-	border-radius: 3.01px;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-	color: #333;
-	cursor: pointer;
-	display: inline-block;
-	font-family: inherit;
-	font-size: 14px;
-	font-variant: normal;
-	font-weight: normal;
-	height: 2.1428571428571em;
-	line-height: 1.4285714285714;
-	margin: 0;
-	padding: 4px 10px;
-	text-decoration: none;
-	text-shadow: 0 1px 0 white;
-	vertical-align: baseline;
-	white-space: nowrap;
+	background: #f2f2f2!important;
+	background: -webkit-linear-gradient(top,#fff 0,#f2f2f2 100%)!important;
+	background: -moz-linear-gradient(top,#fff 0,#f2f2f2 100%)!important;
+	background: -ms-linear-gradient(top,#fff 0,#f2f2f2 100%)!important;
+	background: -o-linear-gradient(top,#fff 0,#f2f2f2 100%)!important;
+	background: linear-gradient(to bottom,#fff 0,#f2f2f2 100%)!important;
+	border: 1px solid #ccc!important;
+	border-radius: 3.01px!important;
+	-moz-box-sizing: border-box!important;
+	box-sizing: border-box!important;
+	color: #333!important;
+	cursor: pointer!important;
+	display: inline-block!important;
+	font-family: inherit!important;
+	font-size: 14px!important;
+	font-variant: normal!important;
+	font-weight: normal!important;
+	height: 2.1428571428571em!important;
+	line-height: 1.4285714285714!important;
+	margin: 0!important;
+	padding: 4px 10px!important;
+	text-decoration: none!important;
+	text-shadow: 0 1px 0 white!important;
+	vertical-align: baseline!important;
+	white-space: nowrap!important;
 }
 
 .button-wrapper, .signup-container {
@@ -77,4 +93,9 @@ h2 {
 #main-panel {
 	background: #f5f5f5;
 }
+
+/*
+.col-sm-15, .col-md-17, .col-lg-18, .col-xlg-20 {
+	width: 100%;
+} */
 

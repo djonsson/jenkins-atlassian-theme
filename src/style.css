@@ -3,6 +3,11 @@ table, form, input, td, th, p, textarea, select {
   font-size: 12px;  
 }
 
+body {
+    background: #f5f5f5;
+    height: 100%;
+}
+
 h1, h2, h3, h4, h5, h6 {
   color: #000000; }
 
@@ -15,8 +20,12 @@ a.model-link.inside {
   text-decoration:none;
 }
 
+#executors {
+    background-color: #ffffff;
+}
+
 #executors a.model-link.inside {
-  background: none repeat scroll 0 0 #F5F5F5;
+  background: none repeat scroll 0 0 #F5F5F5!important;
   border: 1px solid #CCCCCC;
   color: #3B73AF;
   display: inline-block;
@@ -31,43 +40,54 @@ a.model-link.inside {
   vertical-align: middle;
   white-space: normal;
 }
-/*
-img {
-  display: none;
-}
-*/
 
-/* top panel */
+/* header panel */
 
-#top-panel {
+#header {
   background: none repeat scroll 0 0 #205081;
   background-color: #205081;
 }
 
-#top-panel td#login-field span a {
-  background: none; 
-}
-
-#top-panel td #searchform a {
+#header td#login-field span a {
   background: none;
-  height: auto;
-  width: auto; 
 }
 
-#top-panel td > a {
+
+.logo {
   background: url("jenkins_logo.png") 0 no-repeat;
   display: block;
   width: 330px;
   height: 40px;
-  margin: 0px 0 0px 10px; 
+  margin: 0px 0 0px 10px;
 }
 
-#top-panel td > a img {
+.logo img {
   display: none; 
 }
 
-#top-panel img {
-  display: none;
+#search-box {
+    width: 175px !important;
+    -moz-appearance: textfield;
+    -webkit-appearance: textfield;
+    border: none;
+    border-radius: 5em;
+    box-shadow: inset 1px 2px 3px rgba(0,0,0,0.3);
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #333;
+    font-family: inherit;
+    font-size: 14px;
+    height: 1.71428571428571em;
+    line-height: 1.71428571428571;
+    padding-left: 20px;
+    position: static;
+    font-size: 16px;
+    padding: 5px 10px;
+    background-image: none;
+}
+
+img.icon-help {
+    display: none;
 }
 
 /* project status */
@@ -96,27 +116,6 @@ img {
   border:1px solid #dcdcdc;
 }
 
-#search-box {
-  width: 175px !important;
-  -moz-appearance: textfield;
-  -webkit-appearance: textfield;
-  border: none;
-  border-radius: 5em;
-  box-shadow: inset 1px 2px 3px rgba(0,0,0,0.3);
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  color: #333;
-  font-family: inherit;
-  font-size: 14px;
-  height: 1.71428571428571em;
-  line-height: 1.71428571428571;
-  padding-left: 20px;
-  position: static;
-  font-size: 16px;
-  padding: 5px 10px;
-  background-image: none;
-  margin: 7px;
-}
 
 .top-sticker, .noedge {
   top: 43px;
@@ -132,6 +131,10 @@ img {
 
 /* side panel  */
 
+td.pane {
+    background-color: #ffffff;
+}
+
 td.pane-header {
   border: 1px #bbb solid;
   border-right: none;
@@ -139,29 +142,27 @@ td.pane-header {
   background-color: #369;
   font-weight: bold;
   font-size: 12px;
-  color: #ffffff;
   min-height: 24px;
   -moz-border-radius-topleft: 3px;
   border-top-left-radius: 3px;
   -moz-border-radius-topright: 3px;
   border-top-right-radius: 3px;
-  border: 1px solid #ddd;
   padding: 4px 64px 4px 10px;
   line-height: 1.666666666667;
 }
 
 .pane-header a:link, .pane-header a:visited {
-  color:#FFFFFF; 
   text-decoration: none;
 }
 
 #side-panel {
-  background-color: #fff; 
+  background-color: #f5f5f5;
 }
 
+/*
 #side-panel > div:not(#navigation) {
   display: none; 
-}
+} */
 
 #side-panel .task a {
   text-decoration: none;
@@ -191,15 +192,16 @@ td.progress-bar-done {
   background-color: #3465a4;
 }
 
+/*
+side-panel-content. td.row {
+    background-color: #ffffff;
+} */
+
 /* main panel  */
 
 #view-message #description a img {
   padding-right: 4px;
 
-}
-
-#main-panel {
-  background: #ffffff; 
 }
 
 #main-panel > h1 {
@@ -291,22 +293,7 @@ td.progress-bar-done {
   background: #f5f5f5;
 }
 
-input[name='j_username'], input[name='j_password'] {
-    -moz-box-sizing: border-box;
-    border: 1px solid #CCCCCC;
-    border-radius: 3.01px 3.01px 3.01px 3.01px;
-    box-shadow: 0 1px 3px #CCCCCC inset;
-    color: #333333;
-    font-size: inherit;
-    margin: 0;
-    max-width: 250px;
-    vertical-align: baseline;
-    width: 100%;
-    height: 1.7em;
-    line-height: 1.42857;
-    padding: 4px 5px;
-}
-
+/*
 #yui-gen1-button {
     -moz-box-sizing: border-box;
     background: -moz-linear-gradient(center top , #FFFFFF 0px, #F2F2F2 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
@@ -326,7 +313,7 @@ input[name='j_username'], input[name='j_password'] {
     vertical-align: baseline;
     white-space: nowrap;
     text-transform: capitalize;
-}
+}*/
 
 
 #footer a:link, #footer a:visited {
@@ -356,7 +343,6 @@ body>pre,#main-panel>pre {
     border-radius: 5px;
     border: 1px solid rgba(0, 0, 0, 0.2);
     word-wrap: break-word;
-    max-width: 1200px;
 }
 
 body>pre a,body>pre a:visited,#main-panel pre a,#main-panel pre a:visited {
@@ -409,3 +395,8 @@ tr.permission-row:nth-child(even) {
   background-image: -webkit-radial-gradient(3px 3px, circle cover, #f0ad4e, #d58512);
   background-image: radial-gradient(circle at 3px 3px, #f0ad4e 0%, #d58512 100%);
 }
+
+
+
+
+

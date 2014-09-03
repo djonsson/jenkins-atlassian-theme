@@ -6,6 +6,7 @@ jQuery(function($){
 		var mainPanel 		= $( '#main-panel' );
 		var sidePanel 		= $( '#side-panel' );
 
+
 		var usernameLabel 	= $('input[name="j_username"]').closest('td').prev('td').addClass('input-label');
 		var passwordLabel 	= $('input[name="j_password"]').closest('td').prev('td').addClass('input-label');
 		var signupContainer	= $('a[href=signup]').closest('div').addClass('signup-container');
@@ -17,10 +18,6 @@ jQuery(function($){
 		var loginForm 		= $( 'form[name="login"]' ).length;
 
 		if (loginForm) {
-			appendStyleSheet( srcDirectory + 'login.css' );
-				
-			sidePanel.hide();
-			mainPanel.css( 'background', '#f5f5f5' );
 
 			usernameLabel.text( 'Username' );
 			passwordLabel.text( 'Password' );
@@ -36,7 +33,7 @@ jQuery(function($){
 
 		function createDiv ( name ) {
 			return $('<div />', {
-			"class": name,
+			"class": name
 			});
 		}
 
@@ -47,4 +44,5 @@ jQuery(function($){
 				.appendTo( 'head' );
 		}
 	}
+	
 });
