@@ -197,7 +197,7 @@ td.progress-bar-done {
     margin-bottom: 20px;
 }
 
-#description .icon-notepad img{
+#description-link .icon-notepad {
     display: none;
 }
 
