@@ -96,8 +96,17 @@ img.icon-help {
 
 /* project status */
 
+.dashboard .pane-frame {
+    margin-bottom: 20px;
+    position: relative;
+    border: 1px solid #ccc;
+    border-radius: 0 4px 4px 4px;
+    box-shadow: 0 1px 0 #e7f0f8;
+    color: #666;
+}
+
 #projectstatus {
-    background: #fff;
+    background: none;
 }
 
 #projectstatus tr:nth-of-type(odd) {
@@ -181,12 +190,12 @@ div.pane-header a:link, div.pane-header a:visited {
     font-size: 14px;
     width: 10%;
 }
-  
+
 #side-panel .task a + a {
     width: 83%;
     padding: 4px;
 }
-  
+
 #side-panel .task a + a:hover {
     background-color: #e6e6e6;
     text-decoration: none;
@@ -195,7 +204,7 @@ div.pane-header a:link, div.pane-header a:visited {
 table.progress-bar.red td.progress-bar-done {
     background-color: #3465a4;
 }
-      
+
 table.progress-bar.red {
     border: 1px solid #3465a4;
 }
@@ -209,7 +218,6 @@ td.progress-bar-done {
 
 #description {
     background-color: #ffffff;
-    padding: 5px 5px 5px 10px;
     margin-bottom: 20px;
     position: relative;
     padding: 15px 25px 14px;
@@ -240,14 +248,19 @@ td.progress-bar-done {
     border-bottom: 0;
 }
 
-#viewList td.active {
-    border: solid 1px #bbb;
-    padding: 0.5em;
-    border-bottom: none;
-    vertical-align:middle;
-    background-color: rgb(240,240,240);
-    font-weight: bold;
+.tab {
+    vertical-align: middle;
     white-space: nowrap;
+}
+
+.tab.active {
+    border: solid #ccc;
+    border-width: 1px;
+    border-bottom-width: 0px;
+    border-radius: 0 4px 4px 4px;
+    box-shadow: 0 1px 0 #e7f0f8;
+    color: #666;
+    font-weight: bold;
 }
 
 #viewList {
@@ -256,29 +269,6 @@ td.progress-bar-done {
     margin-top: 20px;
     width: 100%;
     white-space: nowrap;
-}
-
-#viewList td.inactive a {
-    background: #f2f2f2;
-    background: -moz-linear-gradient(top,#fff 0,#f2f2f2 100%);
-    background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#fff),color-stop(100%,#f2f2f2));
-    background: -webkit-linear-gradient(top,#fff 0,#f2f2f2 100%);
-    background: -o-linear-gradient(top,#fff 0,#f2f2f2 100%);
-    background: -ms-linear-gradient(top,#fff 0,#f2f2f2 100%);
-    background: linear-gradient(top,#fff 0,#f2f2f2 100%);
-    border-color: #ccc;
-    border-width: 1px;
-    color: #333;
-    display: inline-block;
-    margin: 0;
-    padding: 10px 10px;
-    text-decoration: none;
-    text-shadow: 0 1px 0 white;
-    vertical-align: baseline;
-    height: auto;
-    text-indent: 0;
-    width: auto;
-    float: left;
 }
 
 #viewList td.inactive a:hover {
@@ -322,7 +312,7 @@ td.progress-bar-done {
     color:#707070;
 }
 
-/* Console output */ 
+/* Console output */
 .console-output {
     font-size:14px;
     background-color:#393939;
@@ -335,7 +325,7 @@ td.progress-bar-done {
     box-shadow: 0 1px 10px rgba(0, 0, 0, 0.32);
     /*background-clip*/
     -webkit-background-clip: padding-box;
-    -moz-background-clip: /*@@prefixmycss->No equivalent*/; 
+    -moz-background-clip: /*@@prefixmycss->No equivalent*/;
     background-clip:padding-box;
     /*@@prefixmycss->No equivalent*/
     : ;
