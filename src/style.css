@@ -209,13 +209,17 @@ td.progress-bar-done {
     background-color: #ffffff;
     padding: 5px 5px 5px 10px;
     margin-bottom: 20px;
+    position: relative;
+    padding: 15px 25px 14px;
+    border: 1px solid #ccc;
+    border-radius: 0 4px 4px 4px;
+    box-shadow: 0 1px 0 #e7f0f8;
+    color: #666;
 }
 
 #description-link .icon-notepad {
     display: none;
 }
-
-
 
 #view-message #description a img {
     padding-right: 4px;
