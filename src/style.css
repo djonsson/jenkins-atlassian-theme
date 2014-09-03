@@ -149,7 +149,6 @@ td.pane-header {
 
 .pane-header a:link, .pane-header a:visited {
     text-decoration: none;
-    background-color: #205081;
 }
 
 #side-panel {
@@ -158,7 +157,7 @@ td.pane-header {
 
 /*
 #side-panel > div:not(#navigation) {
-  display: none; 
+  display: none;
 } */
 
 #side-panel .task a {
@@ -191,6 +190,18 @@ td.progress-bar-done {
 
 
 /* main panel  */
+
+#description {
+    background-color: #ffffff;
+    padding: 5px 5px 5px 10px;
+    margin-bottom: 20px;
+}
+
+#description .icon-notepad img{
+    display: none;
+}
+
+
 
 #view-message #description a img {
     padding-right: 4px;
