@@ -94,6 +94,10 @@ img.icon-help {
     display: none;
 }
 
+.top-sticker-inner {
+    background-color: #ffffff;
+}
+
 /* project status */
 
 .dashboard .pane-frame {
@@ -304,7 +308,6 @@ td.progress-bar-done {
 #footer {
     border-top: 0 none;
     text-align: center;
-    background: #f5f5f5;
 }
 
 
