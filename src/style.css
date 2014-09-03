@@ -12,12 +12,12 @@ h1, h2, h3, h4, h5, h6 {
     color: #000000; }
 
 a:link, a:visited {
-    text-decoration: underline;
+    text-decoration: none;
     color: #3b73af;
 }
 
-a.model-link.inside {
-    text-decoration:none;
+a:hover, a:active {
+    text-decoration: underline;
 }
 
 #executors a.model-link.inside {
@@ -54,6 +54,10 @@ a.model-link.inside {
     background: none;
 }
 
+.smallfont {
+    text-transform: lowercase;
+    font-size: 13px;
+}
 
 .logo {
     background: url("jenkins_logo.png") 0 no-repeat;
@@ -78,10 +82,8 @@ a.model-link.inside {
     box-sizing: border-box;
     color: #333;
     font-family: inherit;
-    font-size: 14px;
     height: 1.71428571428571em;
     line-height: 1.71428571428571;
-    padding-left: 20px;
     position: static;
     font-size: 16px;
     padding: 5px 10px;
