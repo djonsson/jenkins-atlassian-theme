@@ -10,7 +10,7 @@ module.exports = function(grunt) {
         },
         js : {
             src : [
-                'src/*.js'
+                'src/login.js'
             ],
             dest : 'dist/theme.js'
         }
