@@ -37,6 +37,12 @@ a.model-link.inside {
     white-space: normal;
 }
 
+/* Need to invvestigate why the rows in tables are not 100% of the width
+#executors > div.row.pane-content > table > tbody {
+    background-color: #ffffff;
+}
+*/
+
 /* header panel */
 
 #header {
@@ -131,7 +137,14 @@ td.pane {
     background-color: #ffffff;
 }
 
-td.pane-header {
+
+.pane-header a:link, .pane-header a:visited {
+    text-decoration: none;
+}
+
+div.pane-header {
+    color: #ffffff;
+    text-decoration: none;
     border: 1px #bbb solid;
     border-right: none;
     border-left: none;
@@ -147,8 +160,9 @@ td.pane-header {
     line-height: 1.666666666667;
 }
 
-.pane-header a:link, .pane-header a:visited {
+div.pane-header a:link, div.pane-header a:visited {
     text-decoration: none;
+    color: #ffffff;
 }
 
 #side-panel {
@@ -303,7 +317,7 @@ td.progress-bar-done {
 }
 
 /* Console output */ 
-body>pre,#main-panel>pre {
+.console-output {
     font-size:14px;
     background-color:#393939;
     color:#b5c4d0;
