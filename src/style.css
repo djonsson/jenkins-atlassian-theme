@@ -150,6 +150,10 @@ a:hover, a:active {
     border-color: #ccc;
 }
 
+#projectstatus tr th:first-child, .bigtable tr th:first-child {
+    padding: 10px;
+}
+
 #projectstatus tr:hover {
     background-color: #ccc;
 }
