@@ -102,7 +102,7 @@ img.icon-help {
 }
 
 .top-sticker-inner, #footer-container {
-    background-color: #ffffff;
+    background-color: #f5f5f5;
 }
 
 /* project status */
@@ -117,7 +117,11 @@ img.icon-help {
 }
 
 #side-panel .pane-frame:hover {
-    border:none;
+    border:none!important;
+}
+
+#side-panel .pane-frame {
+    border:none!important;
 }
 
 .bigtable th {
@@ -207,6 +211,10 @@ div.pane-header, div.pane-header a:link, div.pane-header a:visited {
     text-transform: uppercase;
 }
 
+.col-sm-9, .col-md-7, .col-lg-6, .col-xlg-4 {
+    max-width: 300px;
+}
+
 #side-panel {
     background-color: #f5f5f5!important;
     padding-left: 0!important;
@@ -287,6 +295,17 @@ td.progress-bar-done {
     border-bottom: 0;
 }
 
+.tabBar {
+    overflow: auto;
+    background-color: #f5f5f5;
+    border: solid #ccc;
+    border-top-width: 1px;
+    border-right-width: 0px;
+    border-left-width: 0px;
+    border-bottom-width: 1px;
+    margin: 2px;
+}
+
 .tab {
     text-align: center;
     vertical-align: middle;
@@ -299,7 +318,7 @@ td.progress-bar-done {
 
 .tabBar [type=radio]:checked ~ a {
     border: none!important;
-    background-color: inherit!important;
+    color: inherit!important;
 }
 
 .tabBar .tab a.addTab {
@@ -307,7 +326,7 @@ td.progress-bar-done {
 }
 
 .tabBar .tab a {
-    color: #3b73af!important;
+    color: #3b73af;
     position: relative;
     display: block;
     border-width: 0px;
@@ -315,6 +334,10 @@ td.progress-bar-done {
     padding: 13px 10px;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
+}
+
+.tabBar .tab a:hover {
+    background-color: #e5e5e5;
 }
 
 #viewList {
