@@ -4,7 +4,7 @@ table, form, input, td, th, p, textarea, select {
 }
 
 body {
-    background: #f5f5f5;
+    background: #fff;
     height: 850px;
 }
 
@@ -28,6 +28,10 @@ a:hover, a:active {
     text-decoration: underline;
 }
 
+.row .pane-content {
+    background-color: #f5f5f5;
+}
+
 #executors a.model-link.inside {
     background: none repeat scroll 0 0 #F5F5F5!important;
     border: 1px solid #CCCCCC;
@@ -45,11 +49,6 @@ a:hover, a:active {
     white-space: normal;
 }
 
-/* Need to invvestigate why the rows in tables are not 100% of the width
-#executors > div.row.pane-content > table > tbody {
-    background-color: #ffffff;
-}
-*/
 
 /* header panel */
 
@@ -98,12 +97,12 @@ a:hover, a:active {
     background-image: none;
 }
 
-img.icon-help {
+#searchform > a > img {
     display: none;
 }
 
 .top-sticker-inner, #footer-container {
-    background-color: #ffffff;
+    background-color: #f5f5f5;
 }
 
 /* project status */
@@ -111,18 +110,52 @@ img.icon-help {
 .dashboard .pane-frame {
     margin-bottom: 20px;
     position: relative;
-    border: 1px solid #ccc;
+    border: 0px solid #ccc;
     border-radius: 0 4px 4px 4px;
     box-shadow: 0 1px 0 #e7f0f8;
     color: #666;
 }
 
-#projectstatus {
-    background: none;
+#side-panel .pane-frame:hover {
+    border:none!important;
+}
+
+#side-panel .pane-frame {
+    border:none!important;
+}
+
+.bigtable th {
+    background-color: #fff;
+    text-transform: uppercase;
+}
+
+.sortheader {
+    padding-left: 1px;
+    font-weight: normal;
+    font-size: 12px;
+    text-transform: lowercase;
+}
+
+.sortheader:first-letter {
+    text-transform: uppercase;
+}
+
+#projectstatus tr{
+    background: #fff;
+    border: solid;
+    border-top-width: 0;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 1px;
+    border-color: #ccc;
+}
+
+#projectstatus tr:hover {
+    background-color: #ccc;
 }
 
 #projectstatus tr:nth-of-type(odd) {
-    background-color: #f5f5f5;
+    background-color: white;
 }
 
 #projectstatus tr:nth-of-type(odd):hover {
@@ -137,8 +170,9 @@ img.icon-help {
     background-color: #e5e5e5;
 }
 
-.bigtable tr {
+.bigtable {
     border:1px solid #dcdcdc;
+    background-color: #fff;
 }
 
 
@@ -157,7 +191,7 @@ img.icon-help {
 /* side panel  */
 
 td.pane {
-    background-color: #ffffff;
+    background-color: inherit;
 }
 
 
@@ -166,30 +200,30 @@ td.pane {
 }
 
 div.pane-header {
-    color: #ffffff;
     text-decoration: none;
-    border: 1px #bbb solid;
     border-right: none;
     border-left: none;
-    background-color: #369;
     font-weight: bold;
-    font-size: 12px;
+    font-size: 13px;
     min-height: 24px;
-    -moz-border-radius-topleft: 3px;
-    border-top-left-radius: 3px;
-    -moz-border-radius-topright: 3px;
-    border-top-right-radius: 3px;
-    padding: 4px 64px 4px 10px;
+    padding: 4px 64px 4px 0px;
     line-height: 1.666666666667;
 }
 
-div.pane-header a:link, div.pane-header a:visited {
+div.pane-header, div.pane-header a:link, div.pane-header a:visited {
     text-decoration: none;
-    color: #ffffff;
+    color: #707070;
+    background-color: inherit;
+    border-width: 0px;
+    text-transform: uppercase;
+}
+
+.col-sm-9, .col-md-7, .col-lg-6, .col-xlg-4 {
+    max-width: 300px;
 }
 
 #side-panel {
-    background-color: #ffffff!important;
+    background-color: #f5f5f5!important;
     padding-left: 0!important;
     padding-right: 0!important;
     height: 100%!important;
@@ -240,7 +274,7 @@ td.progress-bar-done {
     border: 1px solid #ccc;
     border-radius: 0 4px 4px 4px;
     box-shadow: 0 1px 0 #e7f0f8;
-    color: #666;
+    color: #000;
 }
 
 #description-link .icon-notepad {
@@ -250,6 +284,10 @@ td.progress-bar-done {
 #view-message #description a img {
     padding-right: 4px;
 
+}
+
+#main-panel {
+    background-color: #fff;
 }
 
 #main-panel > h1 {
@@ -264,19 +302,50 @@ td.progress-bar-done {
     border-bottom: 0;
 }
 
+.tabBar {
+    overflow: auto;
+    background-color: #f5f5f5;
+    border: solid #ccc;
+    border-top-width: 1px;
+    border-right-width: 0px;
+    border-left-width: 0px;
+    border-bottom-width: 1px;
+    margin: 2px;
+}
+
 .tab {
+    text-align: center;
     vertical-align: middle;
     white-space: nowrap;
 }
 
 .tab.active {
-    border: solid #ccc;
-    border-width: 1px;
-    border-bottom-width: 0px;
-    border-radius: 0 4px 4px 4px;
-    box-shadow: 0 1px 0 #e7f0f8;
-    color: #666;
-    font-weight: bold;
+    border: none!important;
+}
+
+.tabBar [type=radio]:checked ~ a {
+    border: none!important;
+    color: inherit!important;
+    background: #f5f5f5;
+}
+
+.tabBar .tab a.addTab {
+    border: none!important;
+}
+
+.tabBar .tab a {
+    color: #3b73af;
+    position: relative;
+    display: block;
+    border-width: 0px;
+    text-decoration: none;
+    padding: 10px 10px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.tabBar .tab a:hover {
+    background-color: #e5e5e5;
 }
 
 #viewList {
@@ -354,6 +423,10 @@ td.progress-bar-done {
 
 body>pre a,body>pre a:visited,#main-panel pre a,#main-panel pre a:visited {
     color:#9a8eb8;
+}
+
+th.pane {
+    color: #f5f5f5!important;
 }
 
 tr.permission-row:nth-child(even) {
