@@ -116,6 +116,10 @@ img.icon-help {
     color: #666;
 }
 
+.pane-frame {
+    border: none;
+}
+
 .bigtable th {
     background-color: #fff;
     text-transform: uppercase;
@@ -185,20 +189,13 @@ td.pane {
 }
 
 div.pane-header {
-    color: #ffffff;
     text-decoration: none;
-    border: 1px #bbb solid;
     border-right: none;
     border-left: none;
-    background-color: #369;
     font-weight: bold;
-    font-size: 12px;
+    font-size: 13px;
     min-height: 24px;
-    -moz-border-radius-topleft: 3px;
-    border-top-left-radius: 3px;
-    -moz-border-radius-topright: 3px;
-    border-top-right-radius: 3px;
-    padding: 4px 64px 4px 10px;
+    padding: 4px 64px 4px 0px;
     line-height: 1.666666666667;
 }
 
