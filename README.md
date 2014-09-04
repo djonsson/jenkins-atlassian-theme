@@ -34,7 +34,7 @@ Login with the following credentials:
 1. Click `Save`
 
 ## Hosted installation
-Skip step 3 and use these URLs in step 6:
+Skip step 4 and use these URLs in step 6:
 
 **Master (Stable)**
 - Hosted CSS: `http://master.source.test.do/dist/theme.css`
