@@ -291,23 +291,33 @@ td.progress-bar-done {
 }
 
 .tab {
+    text-align: center;
     vertical-align: middle;
     white-space: nowrap;
 }
 
 .tab.active {
-    box-shadow: 0 1px 0 #e7f0f8;
-    color: #666;
+    border: none!important;
+}
+
+.tabBar [type=radio]:checked ~ a {
+    border: none!important;
+    background-color: inherit!important;
+}
+
+.tabBar .tab a.addTab {
+    border: none!important;
 }
 
 .tabBar .tab a {
+    color: #3b73af!important;
     position: relative;
     display: block;
-    border-bottom: none;
+    border-width: 0px;
     text-decoration: none;
     padding: 13px 10px;
-    /* border-top-left-radius: 5px; */
-    /* border-top-right-radius: 5px; */
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
 }
 
 #viewList {
