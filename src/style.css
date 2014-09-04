@@ -319,6 +319,7 @@ td.progress-bar-done {
 .tabBar [type=radio]:checked ~ a {
     border: none!important;
     color: inherit!important;
+    background: #f5f5f5;
 }
 
 .tabBar .tab a.addTab {
