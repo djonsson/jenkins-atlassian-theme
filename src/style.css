@@ -4,7 +4,7 @@ table, form, input, td, th, p, textarea, select {
 }
 
 body {
-    background: #f5f5f5;
+    background: #fff;
     height: 850px;
 }
 
@@ -28,6 +28,10 @@ a:hover, a:active {
     text-decoration: underline;
 }
 
+.row .pane-content {
+    background-color: #f5f5f5;
+}
+
 #executors a.model-link.inside {
     background: none repeat scroll 0 0 #F5F5F5!important;
     border: 1px solid #CCCCCC;
@@ -45,11 +49,6 @@ a:hover, a:active {
     white-space: normal;
 }
 
-/* Need to invvestigate why the rows in tables are not 100% of the width
-#executors > div.row.pane-content > table > tbody {
-    background-color: #ffffff;
-}
-*/
 
 /* header panel */
 
@@ -111,18 +110,37 @@ img.icon-help {
 .dashboard .pane-frame {
     margin-bottom: 20px;
     position: relative;
-    border: 1px solid #ccc;
+    border: 0px solid #ccc;
     border-radius: 0 4px 4px 4px;
     box-shadow: 0 1px 0 #e7f0f8;
     color: #666;
 }
 
-#projectstatus {
-    background: none;
+.bigtable th {
+    background-color: #fff;
+    text-transform: uppercase;
+}
+
+.sortheader {
+    padding-left: 1px;
+}
+
+#projectstatus tr{
+    background: #fff;
+    border: solid;
+    border-top-width: 0;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 1px;
+    border-color: #ccc;
+}
+
+#projectstatus tr:hover {
+    background-color: #ccc;
 }
 
 #projectstatus tr:nth-of-type(odd) {
-    background-color: #f5f5f5;
+    background-color: white;
 }
 
 #projectstatus tr:nth-of-type(odd):hover {
@@ -137,8 +155,9 @@ img.icon-help {
     background-color: #e5e5e5;
 }
 
-.bigtable tr {
+.bigtable {
     border:1px solid #dcdcdc;
+    background-color: #fff;
 }
 
 
@@ -157,7 +176,7 @@ img.icon-help {
 /* side panel  */
 
 td.pane {
-    background-color: #ffffff;
+    background-color: inherit;
 }
 
 
@@ -183,13 +202,16 @@ div.pane-header {
     line-height: 1.666666666667;
 }
 
-div.pane-header a:link, div.pane-header a:visited {
+div.pane-header, div.pane-header a:link, div.pane-header a:visited {
     text-decoration: none;
-    color: #ffffff;
+    color: #707070;
+    background-color: inherit;
+    border-width: 0px;
+    text-transform: uppercase;
 }
 
 #side-panel {
-    background-color: #ffffff!important;
+    background-color: #f5f5f5!important;
     padding-left: 0!important;
     padding-right: 0!important;
     height: 100%!important;
@@ -250,6 +272,10 @@ td.progress-bar-done {
 #view-message #description a img {
     padding-right: 4px;
 
+}
+
+#main-panel {
+    background-color: #fff;
 }
 
 #main-panel > h1 {
@@ -357,7 +383,7 @@ body>pre a,body>pre a:visited,#main-panel pre a,#main-panel pre a:visited {
 }
 
 th.pane {
-    color: #ffffff!important;
+    color: #f5f5f5!important;
 }
 
 tr.permission-row:nth-child(even) {
