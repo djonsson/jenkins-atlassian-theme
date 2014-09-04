@@ -116,8 +116,8 @@ img.icon-help {
     color: #666;
 }
 
-.pane-frame {
-    border: none;
+#side-panel .pane-frame:hover {
+    border:none;
 }
 
 .bigtable th {
