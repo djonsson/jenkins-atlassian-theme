@@ -97,7 +97,7 @@ a:hover, a:active {
     background-image: none;
 }
 
-img.icon-help {
+#searchform > a > img {
     display: none;
 }
 
