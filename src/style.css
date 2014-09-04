@@ -296,13 +296,18 @@ td.progress-bar-done {
 }
 
 .tab.active {
-    border: solid #ccc;
-    border-width: 1px;
-    border-bottom-width: 0px;
-    border-radius: 0 4px 4px 4px;
     box-shadow: 0 1px 0 #e7f0f8;
     color: #666;
-    font-weight: bold;
+}
+
+.tabBar .tab a {
+    position: relative;
+    display: block;
+    border-bottom: none;
+    text-decoration: none;
+    padding: 13px 10px;
+    /* border-top-left-radius: 5px; */
+    /* border-top-right-radius: 5px; */
 }
 
 #viewList {
