@@ -7,6 +7,7 @@ jQuery(function($){
         $('#description').hide();
     } else {
         $('#description').show();
+        $('.cmn-toggle').prop('checked', true);
     }
 
     $('.cmn-toggle').change(function() {
