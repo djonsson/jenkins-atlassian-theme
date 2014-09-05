@@ -7,9 +7,10 @@ jQuery(function($){
         $('#description').hide();
     } else {
         $('#description').show();
-        $('.cmn-toggle').removeClass('cmn-toggle-yes-no');
+        $('.cmn-toggle').addClass('notransition');
         $('.cmn-toggle').prop('checked', true);
-        $('.cmn-toggle').addClass('cmn-toggle-yes-no');
+        $('.cmn-toggle')[0].offsetHeight;
+        $('.cmn-toggle').removeClass('notransition');
     }
 
     $('.cmn-toggle').change(function() {
