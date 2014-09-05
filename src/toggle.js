@@ -7,9 +7,9 @@ jQuery(function($){
         $('#description').hide();
     } else {
         $('#description').show();
-        $('.cmn-toggle').hide();
+        $('.toggle').hide();
         $('.cmn-toggle').prop('checked', true);
-        $('.cmn-toggle').show();
+        $('.toggle').show();
     }
 
     $('.cmn-toggle').change(function() {
