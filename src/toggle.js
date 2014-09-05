@@ -3,7 +3,7 @@ jQuery(function($){
     $('#description-link').text('Edit');
     $('#description').before(toggle);
 
-    if(readCookie('toggle') === 'checked') {
+    if(readCookie('toggle') != 'checked') {
         $('#description').hide();
     }
 
