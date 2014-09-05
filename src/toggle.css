@@ -56,4 +56,6 @@ input.cmn-toggle-yes-no:checked + label:after {
   -o-transition: none !important;
   -ms-transition: none !important;
   transition: none !important;
+  -webkit-transform: none!important;
+  transform: none !important;
 }
