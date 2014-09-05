@@ -8,7 +8,7 @@ jQuery(function($){
     } else {
         $('#description').show();
         $('.cmn-toggle').addClass('notransition');
-        $('.cmn-toggle').prop('checked', true);
+        checkToggle($('.cmn-toggle'));
         $('.cmn-toggle')[0].offsetHeight;
         $('.cmn-toggle').removeClass('notransition');
     }
@@ -22,6 +22,10 @@ jQuery(function($){
         }
     });
 });
+
+function checkToggle(toggle) {
+     toggle.prop('checked', true);
+}
 
 function writeCookie(name,value,days) {
     var date, expires;
