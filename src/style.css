@@ -60,6 +60,10 @@ a:hover, a:active {
     background: none;
 }
 
+#breadcrumbs {
+  border-bottom: 1px solid #ccc;
+}
+
 .smallfont {
     text-transform: lowercase;
     font-size: 13px;
