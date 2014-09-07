@@ -65,7 +65,7 @@ a:hover, a:active {
 }
 
 #breadcrumbs li:hover {
-    background-color: #e6e6e6;
+    background-color: #e6e6e6!important;
 }
 
 .smallfont {
