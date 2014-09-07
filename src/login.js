@@ -1,8 +1,6 @@
 jQuery(function($){
 	if (window.location.pathname == "/login" ) {
 		var welcomeMessage 	= 'Welcome to Jenkins - CI Server';
-		var srcDirectory 	= 'http://develop.source.test.do/src/';
-
 		var mainPanel 		= $( '#main-panel' );
 		var sidePanel 		= $( '#side-panel' );
 
