@@ -5,7 +5,6 @@ table, form, input, td, th, p, textarea, select {
 
 body {
     background: #fff;
-    height: 850px;
 }
 
 #page-body {
@@ -61,6 +60,14 @@ a:hover, a:active {
     background: none;
 }
 
+#breadcrumbs {
+    border-bottom: 1px solid #ccc;
+}
+
+#breadcrumbs li:hover {
+    background-color: #e6e6e6!important;
+}
+
 .smallfont {
     text-transform: lowercase;
     font-size: 13px;
@@ -103,6 +110,7 @@ a:hover, a:active {
 
 .top-sticker-inner, #footer-container {
     background-color: #f5f5f5;
+    padding: 12px 0px;
 }
 
 /* project status */
@@ -148,6 +156,10 @@ a:hover, a:active {
     border-right-width: 0;
     border-bottom-width: 1px;
     border-color: #ccc;
+}
+
+#projectstatus tr th:first-child, .bigtable tr th:first-child {
+    padding: 10px;
 }
 
 #projectstatus tr:hover {
@@ -233,6 +245,7 @@ div.pane-header, div.pane-header a:link, div.pane-header a:visited {
     border-left-width: 0;
     border-bottom-width: 1px;
     box-shadow: 0 1px 0 #e7f0f8;
+    min-height: 800px;
 }
 
 #side-panel .task a {
@@ -389,6 +402,7 @@ td.progress-bar-done {
 #footer {
     border-top: 0 none;
     text-align: center;
+    color: #707070;
 }
 
 
@@ -419,6 +433,10 @@ td.progress-bar-done {
     border-radius: 5px;
     border: 1px solid rgba(0, 0, 0, 0.2);
     word-wrap: break-word;
+}
+
+#spinner {
+    margin-top: 15px;
 }
 
 body>pre a,body>pre a:visited,#main-panel pre a,#main-panel pre a:visited {
