@@ -6,11 +6,8 @@ jQuery(function($){
     if(readCookie('toggle') != 'checked') {
         $('#description').hide();
     } else {
-        $('#description').show();
-        $('.cmn-toggle').addClass('notransition');
         checkToggle($('.cmn-toggle'));
-        $('.cmn-toggle')[0].offsetHeight;
-        $('.cmn-toggle').removeClass('notransition');
+        $('#description').show();
     }
 
     $('.cmn-toggle').change(function() {
