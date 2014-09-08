@@ -163,7 +163,7 @@ a:hover, a:active {
 }
 
 #projectstatus tr:hover {
-    background-color: #ccc;
+    background-color: #f7f7f7;
 }
 
 #projectstatus tr:nth-of-type(odd) {
@@ -171,7 +171,7 @@ a:hover, a:active {
 }
 
 #projectstatus tr:nth-of-type(odd):hover {
-    background-color: #e5e5e5;
+    background-color: #f7f7f7;
 }
 
 #projectstatus tr:nth-of-type(even) {
@@ -179,7 +179,7 @@ a:hover, a:active {
 }
 
 #projectstatus tr:nth-of-type(even):hover {
-    background-color: #e5e5e5;
+    background-color: #f7f7f7;
 }
 
 .bigtable {
