@@ -411,7 +411,7 @@ td.progress-bar-done {
 }
 
 /* Console output */
-.console-output, pre {
+pre {
     font-size:14px;
     background-color:#393939;
     color:#b5c4d0;
