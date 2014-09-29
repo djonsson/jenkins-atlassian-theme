@@ -33,7 +33,6 @@ a:hover, a:active {
 
 #executors a.model-link.inside {
     background: none repeat scroll 0 0 #F5F5F5!important;
-    border: 1px solid #CCCCCC;
     color: #3B73AF;
     display: inline-block;
     font-size: 12px;
