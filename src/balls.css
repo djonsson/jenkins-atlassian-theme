@@ -84,7 +84,8 @@ img[src*="progress-unknown.gif"], img[src*="progress-unknown-red.gif"] {
     background: transparent !important;
 }
 
-
+/* We aren't using the .icon-sm, .icon-md, etc because it applies to non ball icons also */
+/* width and height require !important b/c Jenkins puts those attributes in the HTML */
 img[src$="images/16x16/blue.png"],     img[src$="images/16x16/blue.gif"],     img[src$="images/16x16/blue_anime.gif"],
 img[src$="images/16x16/yellow.png"],   img[src$="images/16x16/yellow.gif"],   img[src$="images/16x16/yellow_anime.gif"],
 img[src$="images/16x16/red.png"],      img[src$="images/16x16/red.gif"],      img[src$="images/16x16/red_anime.gif"],
@@ -92,9 +93,10 @@ img[src$="images/16x16/grey.png"],     img[src$="images/16x16/grey.gif"],     im
 img[src$="images/16x16/disabled.png"], img[src$="images/16x16/disabled.gif"], img[src$="images/16x16/disabled_anime.gif"],
 img[src$="images/16x16/nobuilt.png"],  img[src$="images/16x16/nobuilt.gif"],  img[src$="images/16x16/nobuilt_anime.gif"],
 img[src$="images/16x16/aborted.png"],  img[src$="images/16x16/aborted.gif"],  img[src$="images/16x16/aborted_anime.gif"] {
-    width: 0;
-    height: 16px;
-    padding: 0 16px 0 0;
+    width: 0 !important;
+    height: 12px !important;
+    padding: 0 12px 0 0;
+    margin: 2px;
 }
 
 img[src$="images/24x24/blue.png"],     img[src$="images/24x24/blue.gif"],     img[src$="images/24x24/blue_anime.gif"],
@@ -104,9 +106,10 @@ img[src$="images/24x24/grey.png"],     img[src$="images/24x24/grey.gif"],     im
 img[src$="images/24x24/disabled.png"], img[src$="images/24x24/disabled.gif"], img[src$="images/24x24/disabled_anime.gif"],
 img[src$="images/24x24/nobuilt.png"],  img[src$="images/24x24/nobuilt.gif"],  img[src$="images/24x24/nobuilt_anime.gif"],
 img[src$="images/24x24/aborted.png"],  img[src$="images/24x24/aborted.gif"],  img[src$="images/24x24/aborted_anime.gif"] {
-    width: 0;
-    height: 24px;
-    padding: 0 24px 0 0;
+    width: 0 !important;
+    height: 16px !important;
+    padding: 0 16px 0 0;
+    margin: 4px;
 }
 
 img[src$="images/32x32/blue.png"],     img[src$="images/32x32/blue.gif"],     img[src$="images/32x32/blue_anime.gif"],
@@ -116,10 +119,10 @@ img[src$="images/32x32/grey.png"],     img[src$="images/32x32/grey.gif"],     im
 img[src$="images/32x32/disabled.png"], img[src$="images/32x32/disabled.gif"], img[src$="images/32x32/disabled_anime.gif"],
 img[src$="images/32x32/nobuilt.png"],  img[src$="images/32x32/nobuilt.gif"],  img[src$="images/32x32/nobuilt_anime.gif"],
 img[src$="images/32x32/aborted.png"],  img[src$="images/32x32/aborted.gif"],  img[src$="images/32x32/aborted_anime.gif"] {
-    width: 0;
-    height: 24px;
+    width: 0 !important;
+    height: 24px !important;
     padding: 0 24px 0 0;
-  margin-left: 5px;
+    margin: 4px;
 }
 
 img[src$="images/48x48/blue.png"],     img[src$="images/48x48/blue.gif"],     img[src$="images/48x48/blue_anime.gif"],
@@ -129,7 +132,8 @@ img[src$="images/48x48/grey.png"],     img[src$="images/48x48/grey.gif"],     im
 img[src$="images/48x48/disabled.png"], img[src$="images/48x48/disabled.gif"], img[src$="images/48x48/disabled_anime.gif"],
 img[src$="images/48x48/nobuilt.png"],  img[src$="images/48x48/nobuilt.gif"],  img[src$="images/48x48/nobuilt_anime.gif"],
 img[src$="images/48x48/aborted.png"],  img[src$="images/48x48/aborted.gif"],  img[src$="images/48x48/aborted_anime.gif"] {
-    width: 0;
-    height: 48px;
-    padding: 0 48px 0 0;
+    width: 0 !important;
+    height: 32px !important;
+    padding: 0 32px 0 0;
+    margin: 8px;
 }
