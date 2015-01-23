@@ -131,6 +131,7 @@ img[src$="images/48x48/disabled.png"], img[src$="images/48x48/disabled.gif"], im
 img[src$="images/48x48/nobuilt.png"],  img[src$="images/48x48/nobuilt.gif"],  img[src$="images/48x48/nobuilt_anime.gif"],
 img[src$="images/48x48/aborted.png"],  img[src$="images/48x48/aborted.gif"],  img[src$="images/48x48/aborted_anime.gif"] {
     width: 0 !important;
-    height: 48px !important;
-    padding: 0 48px 0 0;
+    height: 32px !important;
+    padding: 0 32px 0 0;
+    margin: 0 5px;
 }
