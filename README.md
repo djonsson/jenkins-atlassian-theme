@@ -37,12 +37,12 @@ Login with the following credentials:
 Skip step 4 and use these URLs in step 6:
 
 **Master (Stable)**
-- Hosted CSS: `http://master.source.test.do/dist/theme.css`
-- Hosted Javascript: `http://master.source.test.do/dist/theme.js`
+- Hosted CSS: `https://test.do/master/dist/theme.css`
+- Hosted Javascript: `https://test.do/master/dist/theme.js`
 
 **Develop (Test environment)**
-- Hosted CSS: `http://develop.source.test.do/dist/theme.css`
-- Hosted Javascript: `http://develop.source.test.do/dist/theme.js`
+- Hosted CSS: `https://test.do/develop/dist/theme.css`
+- Hosted Javascript: `https://test.do/develop/dist/theme.js`
 
 ## Development
 
