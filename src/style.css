@@ -497,7 +497,7 @@ tr.permission-row:nth-child(even) {
     background-image: radial-gradient(circle at 3px 3px, #f0ad4e 0%, #d58512 100%);
 }
 
-
-
-
+.fixedGridLayout #side-panel {
+    position: relative;
+}
 
