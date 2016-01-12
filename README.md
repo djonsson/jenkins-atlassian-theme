@@ -16,18 +16,18 @@ In just *seven* easy steps this camouflage will make Jenkins look just like a pr
 
 1. Install the [Gravatar Plugin][gravatar]
 
-1. Upload `theme.js`, `theme.css` and `jenkins_logo.png` to your web server
+1. Upload `theme.js`, `theme-min.css` and `jenkins_logo.png` to your web server
 
 1. Click `Manage Jenkins`
 
 1. Click `Configure System` and scroll down to `Theme`
 
-1. Specify the URL for `theme.js` and `theme.css`. 
+1. Specify the URL for `theme.js` and `theme-min.css`. 
 
 1. Click `Save`
 
 ## Hosted installation
-Skip step 4 and use these URLs in step 6:
+Skip step 4 and use these URLs in step 7:
 
 **Develop (Test environment)**
 - Hosted CSS: `https://cdn.rawgit.com/djonsson/jenkins-atlassian-theme/gh-pages/theme-min.css`
@@ -43,8 +43,11 @@ grunt
 ```
 
 This will generate the following files:
-- dist/theme.css
-- dist/theme.js
+```
+dist/theme.css
+dist/theme-min.css
+dist/theme.js
+```
 
 You can publish the files on gh-pages with the following command:
 
