@@ -8,13 +8,6 @@ In just *seven* easy steps this camouflage will make Jenkins look just like a pr
 
 *The project is not affiliated or endorsed by Atlassian*
 
-## Live Demo 
-A live demo with the latest changes is available at [test.do][livedemo]. 
-
-Login with the following credentials:
-- **Username:** DrJenkins
-- **Password:** SunflowerRainbowPrince
-
 ## Installation 
 
 1. Install the [JQuery Plugin][jquery]
