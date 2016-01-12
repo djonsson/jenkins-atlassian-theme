@@ -16,7 +16,7 @@ In just *seven* easy steps this camouflage will make Jenkins look just like a pr
 
 1. Install the [Gravatar Plugin][gravatar]
 
-1. Upload `theme.js`, `theme-min.css` and `jenkins_logo.png` to your web server
+1. Upload [theme.js][themejs], [theme-min.css][theme-min] and [jenkins_logo.png][logo] to your web server
 
 1. Click `Manage Jenkins`
 
@@ -27,11 +27,13 @@ In just *seven* easy steps this camouflage will make Jenkins look just like a pr
 1. Click `Save`
 
 ## Hosted installation
+
 Skip step 4 and use these URLs in step 7:
 
-**Develop (Test environment)**
-- Hosted CSS: `https://cdn.rawgit.com/djonsson/jenkins-atlassian-theme/gh-pages/theme-min.css`
-- Hosted Javascript: `https://cdn.rawgit.com/djonsson/jenkins-atlassian-theme/gh-pages/theme.js`
+```
+https://cdn.rawgit.com/djonsson/jenkins-atlassian-theme/gh-pages/theme-min.css
+https://cdn.rawgit.com/djonsson/jenkins-atlassian-theme/gh-pages/theme.js
+```
 
 ## Development
 
@@ -78,6 +80,10 @@ If you are experiencing issues please let me know! Also, feel free to contribute
 [jquery]: https://wiki.jenkins-ci.org/display/JENKINS/jQuery+Plugin
 [simple]: https://wiki.jenkins-ci.org/display/JENKINS/Simple+Theme+Plugin
 [gravatar]: https://wiki.jenkins-ci.org/display/JENKINS/Gravatar+plugin
+
+[theme-min]: https://cdn.rawgit.com/djonsson/jenkins-atlassian-theme/gh-pages/theme-min.css
+[themejs]: https://cdn.rawgit.com/djonsson/jenkins-atlassian-theme/gh-pages/theme.js
+[logo]: https://cdn.rawgit.com/djonsson/jenkins-atlassian-theme/gh-pages/jenkins_logo.png
 
 [doony]: https://github.com/kevinburke/doony
 [progresscircle]: https://github.com/qiao/ProgressCircle.js
