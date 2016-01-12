@@ -8,13 +8,6 @@ In just *seven* easy steps this camouflage will make Jenkins look just like a pr
 
 *The project is not affiliated or endorsed by Atlassian*
 
-## Live Demo 
-A live demo with the latest changes is available at [test.do][livedemo]. 
-
-Login with the following credentials:
-- **Username:** DrJenkins
-- **Password:** SunflowerRainbowPrince
-
 ## Installation 
 
 1. Install the [JQuery Plugin][jquery]
@@ -36,13 +29,9 @@ Login with the following credentials:
 ## Hosted installation
 Skip step 4 and use these URLs in step 6:
 
-**Master (Stable)**
-- Hosted CSS: `http://master.source.test.do/dist/theme.css`
-- Hosted Javascript: `http://master.source.test.do/dist/theme.js`
-
 **Develop (Test environment)**
-- Hosted CSS: `http://develop.source.test.do/dist/theme.css`
-- Hosted Javascript: `http://develop.source.test.do/dist/theme.js`
+- Hosted CSS: `https://cdn.rawgit.com/djonsson/jenkins-atlassian-theme/gh-pages/theme-min.css`
+- Hosted Javascript: `https://cdn.rawgit.com/djonsson/jenkins-atlassian-theme/gh-pages/theme.js`
 
 ## Development
 
@@ -71,7 +60,7 @@ And you can find the files at:
 ## Compatibility
 - JQuery plugin 1.7.2-1
 - Simple Theme plugin 0.3
-- Jenkins 1.580
+- Jenkins 1.643
 - Gravatar plugin 2.1
 
 If you are experiencing issues please let me know! Also, feel free to contribute!
