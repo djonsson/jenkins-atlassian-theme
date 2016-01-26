@@ -573,7 +573,6 @@ jQuery(function($){
         replaceBouncingFloatyBall("img[src*='aborted_anime.gif']", '#999');
         replaceBouncingFloatyBall("img[src*='disabled_anime.gif']", '#999');
         replaceBouncingFloatyBall("img[src*='nobuilt_anime.gif']", '#999');
-        replaceBouncingFloatyBall("img[src*='nobuilt_anime.gif']", '#999');
         replaceBouncingFloatyBall("img[src*='yellow_anime.gif']", '#f0ad4e');
     }, 10);
     setInterval(function() {
