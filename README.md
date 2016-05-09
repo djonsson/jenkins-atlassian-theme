@@ -71,9 +71,9 @@ And you can find the files at:
 - `http://YOURUSER.github.io/jenkins-atlassian-theme/theme.js`
 
 ## Compatibility
+- Jenkins 2.2 and backwards
 - JQuery plugin 1.7.2-1
 - Simple Theme plugin 0.3
-- Jenkins 1.643
 - Gravatar plugin 2.1
 
 If you are experiencing issues please let me know! Also, feel free to contribute!
