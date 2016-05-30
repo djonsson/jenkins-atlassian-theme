@@ -8,12 +8,13 @@ In just *seven* easy steps this camouflage will make Jenkins look just like a pr
 
 *The project is not affiliated or endorsed by Atlassian*
 
-## Live Demo 
-A live demo with the latest changes is available at [test.do][livedemo]. 
+## Preview
 
-Login with the following credentials:
-- **Username:** DrJenkins
-- **Password:** SunflowerRainbowPrince
+https://jenkins-atlassian-theme.herokuapp.com/
+
+This is a limited-access demo running on heroku with a couple test jobs that can be built to show their output. It's pulling the latest compiled for the CDN. A default install can been seen at https://jenkins-demo.herokuapp.com.
+
+*Note:* These are running on single dynos, so the intial view could take up to a minute to load while the Dyno starts and Jenkins loads.
 
 ## Installation 
 
@@ -23,26 +24,24 @@ Login with the following credentials:
 
 1. Install the [Gravatar Plugin][gravatar]
 
-1. Upload `theme.js`, `theme.css` and `jenkins_logo.png` to your web server
+1. Upload [theme.js][themejs], [theme-min.css][theme-min] and [jenkins_logo.png][logo] to your web server
 
 1. Click `Manage Jenkins`
 
 1. Click `Configure System` and scroll down to `Theme`
 
-1. Specify the URL for `theme.js` and `theme.css`. 
+1. Specify the URL for `theme.js` and `theme-min.css`. 
 
 1. Click `Save`
 
 ## Hosted installation
-Skip step 4 and use these URLs in step 6:
 
-**Master (Stable)**
-- Hosted CSS: `http://master.source.test.do/dist/theme.css`
-- Hosted Javascript: `http://master.source.test.do/dist/theme.js`
+Skip step 4 and use these URLs in step 7:
 
-**Develop (Test environment)**
-- Hosted CSS: `http://develop.source.test.do/dist/theme.css`
-- Hosted Javascript: `http://develop.source.test.do/dist/theme.js`
+```
+https://cdn.rawgit.com/djonsson/jenkins-atlassian-theme/gh-pages/theme-min.css
+https://cdn.rawgit.com/djonsson/jenkins-atlassian-theme/gh-pages/theme.js
+```
 
 ## Development
 
@@ -54,8 +53,11 @@ grunt
 ```
 
 This will generate the following files:
-- dist/theme.css
-- dist/theme.js
+```
+dist/theme.css
+dist/theme-min.css
+dist/theme.js
+```
 
 You can publish the files on gh-pages with the following command:
 
@@ -69,9 +71,9 @@ And you can find the files at:
 - `http://YOURUSER.github.io/jenkins-atlassian-theme/theme.js`
 
 ## Compatibility
+- Jenkins 2.2 and backwards
 - JQuery plugin 1.7.2-1
 - Simple Theme plugin 0.3
-- Jenkins 1.580
 - Gravatar plugin 2.1
 
 If you are experiencing issues please let me know! Also, feel free to contribute!
@@ -86,6 +88,10 @@ If you are experiencing issues please let me know! Also, feel free to contribute
 [jquery]: https://wiki.jenkins-ci.org/display/JENKINS/jQuery+Plugin
 [simple]: https://wiki.jenkins-ci.org/display/JENKINS/Simple+Theme+Plugin
 [gravatar]: https://wiki.jenkins-ci.org/display/JENKINS/Gravatar+plugin
+
+[theme-min]: https://cdn.rawgit.com/djonsson/jenkins-atlassian-theme/gh-pages/theme-min.css
+[themejs]: https://cdn.rawgit.com/djonsson/jenkins-atlassian-theme/gh-pages/theme.js
+[logo]: https://cdn.rawgit.com/djonsson/jenkins-atlassian-theme/gh-pages/jenkins_logo.png
 
 [doony]: https://github.com/kevinburke/doony
 [progresscircle]: https://github.com/qiao/ProgressCircle.js

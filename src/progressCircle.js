@@ -570,10 +570,16 @@ jQuery(function($){
         replaceBouncingFloatyBall("img[src*='red_anime.gif']", '#d9534f');
         replaceBouncingFloatyBall("img[src*='blue_anime.gif']", green);
         replaceBouncingFloatyBall("img[src*='grey_anime.gif']", '#999');
+        replaceBouncingFloatyBall("img[src*='aborted_anime.gif']", '#999');
+        replaceBouncingFloatyBall("img[src*='disabled_anime.gif']", '#999');
+        replaceBouncingFloatyBall("img[src*='nobuilt_anime.gif']", '#999');
         replaceBouncingFloatyBall("img[src*='yellow_anime.gif']", '#f0ad4e');
     }, 10);
     setInterval(function() {
         replaceFloatyBall("img[src*='/grey.png']", "aborted");
+        replaceFloatyBall("img[src*='/aborted.png']", "aborted");
+        replaceFloatyBall("img[src*='/disabled.png']", "aborted");
+        replaceFloatyBall("img[src*='/nobuilt.png']", "aborted");
         replaceFloatyBall("img[src*='/blue.png']", "success");
         replaceFloatyBall("img[src*='/red.png']", "failure");
         replaceFloatyBall("img[src*='/yellow.png']", "warning");
