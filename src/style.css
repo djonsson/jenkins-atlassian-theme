@@ -446,7 +446,7 @@ body>pre a,body>pre a:visited,#main-panel pre a,#main-panel pre a:visited {
 }
 
 th.pane {
-    color: #f5f5f5!important;
+    color: #3b3b3b!important;
 }
 
 tr.permission-row:nth-child(even) {
@@ -499,4 +499,3 @@ tr.permission-row:nth-child(even) {
 .fixedGridLayout #side-panel {
     position: relative;
 }
-
