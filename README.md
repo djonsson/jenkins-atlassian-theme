@@ -78,7 +78,7 @@ And you can find the files at:
 
 If you are experiencing issues please let me know! Also, feel free to contribute!
 
-##Thanks to
+## Thanks to
 - [JQuery Plugin][jquery] for the jQuery plugin
 - [Simple Theme Plugin][simple] for the Simple Theme plugin
 - [Atlassian][atlassian] for the the design inspiration and for making awesome products
