@@ -39,7 +39,7 @@ input[name='j_username'], input[name='j_password'] {
 	border: solid #ccc;
 	border-width: 1px;
 	border-radius: 4px;
-	height: 250px;
+	min-height: 250px;
 	background-color: #fff;
 }
 
