@@ -92,6 +92,10 @@ a:hover, a:active {
     display: none;
 }
 
+.logo a#jenkins-home-link {
+    width: inherit;
+}
+
 #search-box {
     width: 175px !important;
     -moz-appearance: textfield;
