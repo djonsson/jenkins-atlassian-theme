@@ -39,8 +39,8 @@ This is a limited-access demo running on heroku with a couple test jobs that can
 Skip step 4 and use these URLs in step 7:
 
 ```
-https://cdn.rawgit.com/djonsson/jenkins-atlassian-theme/gh-pages/theme-min.css
-https://cdn.rawgit.com/djonsson/jenkins-atlassian-theme/gh-pages/theme.js
+https://vikulin.github.io/jenkins-atlassian-theme/theme.css
+https://vikulin.github.io/jenkins-atlassian-theme/theme.js
 ```
 
 ## Development
