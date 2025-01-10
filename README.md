@@ -14,7 +14,7 @@ https://jenkins-atlassian-theme.herokuapp.com/
 
 This is a limited-access demo running on heroku with a couple test jobs that can be built to show their output. It's pulling the latest compiled for the CDN. A default install can been seen at https://jenkins-demo.herokuapp.com.
 
-*Note:* These are running on single dynos, so the intial view could take up to a minute to load while the Dyno starts and Jenkins loads.
+*Note:* These are running on single dynos, so the initial view could take up to a minute to load while the Dyno starts and Jenkins loads.
 
 ## Installation 
 
